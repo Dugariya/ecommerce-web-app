@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
-import { About, Card, Home, Profile, SignIn } from "./page";
+import { About, Cart, Home, Profile, SignIn, SingleProduct } from "./page";
 
 function App() {
   interface Route {
@@ -23,9 +23,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/about" element={<About />} />
-
         <Route path="/profile" element={<Profile />} />
-        <Route path="/card" element={<Card />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/products/:id" element={<SingleProduct />} />
       </Routes>
     </BrowserRouter>
   );

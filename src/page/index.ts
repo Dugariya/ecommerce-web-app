@@ -1,6 +1,7 @@
 import About from "./about";
-import Card from "./card";
+import Cart from "./cart";
 import Home from "./home";
 import Profile from "./profile";
 import SignIn from "./signin";
-export { About, Home, Profile, Card, SignIn };
+import SingleProduct from "./singleProduct";
+export { About, Home, Profile, Cart, SignIn,SingleProduct };
